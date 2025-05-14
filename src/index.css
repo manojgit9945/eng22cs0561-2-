@@ -1,0 +1,82 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 60% 98%;
+    --foreground: 210 38% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 38% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 38% 15%;
+
+    --primary: 204 80% 40%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 180 55% 56%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 20% 90%;
+    --muted-foreground: 210 22% 40%;
+
+    --accent: 164 100% 58%;
+    --accent-foreground: 210 38% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 80%;
+    --input: 214.3 31.8% 80%;
+    --ring: 204 80% 40%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 219 60% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 219 50% 15%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 219 50% 15%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 204 80% 40%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 180 55% 56%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 25% 20%;
+    --muted-foreground: 210 22% 70%;
+
+    --accent: 164 100% 58%;
+    --accent-foreground: 210 38% 15%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 25%;
+    --input: 217.2 32.6% 25%;
+    --ring: 204 80% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  .recharts-tooltip-cursor {
+    @apply fill-muted/30;
+  }
+}
